@@ -1,0 +1,240 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('asset/background.png') no-repeat center center/cover;
+    margin: 0; /* Removes default body margin */
+    padding: 0;
+}
+
+.logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+.secondarylogo{
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.secondarylogo:hover{
+    transform: scale(1.05);
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline if present */
+    padding: 10px; /* Add consistent padding */
+    display: inline-block; /* Ensure links are treated as block elements */
+}
+
+.nav-link:hover {
+    color: #f57c00;
+}
+
+.nav-link-active {
+    color:#e65100;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline if present */
+    padding: 10px; /* Add consistent padding */
+    display: inline-block; /* Ensure links are treated as block elements */
+}
+
+/* Main Content Styling */
+#main-content {
+    min-height: 80vh;
+    color: white;
+}
+
+.food-image img {
+    width: 100%; /* Make images fully responsive */
+    height: auto;
+    object-fit: cover;
+    cursor: pointer; /* Make images clickable */
+}
+
+.btn-warning {
+    background-color: #f57c00;
+    border: none;
+    width: 300px;
+    height: auto;
+    color:white;
+}
+
+.btn-warning:hover {
+    background-color: white;
+    width: 300px;
+    height: auto;
+    color: #e65100;
+}
+
+/* Menu Section Styling */
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center content within each panel */
+}
+
+.card-title {
+    color: #f57c00;
+    font-weight: bold;
+}
+
+.card-text {
+    color: white;
+}
+
+.tap-info {
+    color: gray;
+    font-size: 12px;
+}
+
+.price {
+    color: #f57c00;
+    font-weight: bold;
+}
+
+/* Menu Categories Styling */
+.menu-category {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flexbox;
+    justify-items: center; /* Center the content within the grid */
+}
+
+.menu-category h2 {
+    background-color: #f57c00; /* Semi-transparent background */
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    width: 30%;
+    height: 50px;
+}
+
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+     width: auto; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 40px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.menu-item .row {
+    align-items: center; /* Align items vertically */
+}
+
+.menu-item .card-img-top {
+    width: 100%; /* Make image fill the entire column */
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-item .card-img-top:hover {
+    transform: scale(1.1)
+}
+
+.menu-item .card-body {
+    text-align: left; /* Align text to the left */
+    margin-left: -30px; /* Adjust the margin as needed */
+}
+
+/* About Us Page Styling */
+#about-us {
+    background: url('background-about.jpg') no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Cart Page Specific Styling */
+.cart-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.cart-item .card-body {
+    text-align: center;
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-control button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.quantity-control .quantity {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bg-warning {
+    background-color: #f57c00 !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-item {
+        margin-bottom: 20px; /* Add spacing between items on smaller screens */
+    }
+}
+
+footer {
+    background-color: #652f09; /* Dark brown color */
+    color: white;
+    height: 40px; /* Adjust height as needed */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Center the text horizontally */
+    line-height: 10px; /* Vertically center the text */
+}

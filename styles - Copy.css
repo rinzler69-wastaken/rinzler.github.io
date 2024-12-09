@@ -1,0 +1,60 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('asset/background.png') no-repeat center center/cover;
+    margin: 0; /* Removes default body margin */
+    padding: 0;
+}
+
+.logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+.secondarylogo{
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+}
+/* Main Content Styling */
+#main-content {
+    min-height: 80vh;
+    color: white;
+}
+
+.food-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.btn-warning {
+    background-color: #f57c00;
+    border: none;
+    width: 300px;
+    height: auto;
+}
+
+.btn-warning:hover {
+    background-color: #e65100;
+    width: 300px;
+    height: auto;
+}
+
+/* About Us Page */
+#about-us {
+    background: url('background-about.jpg') no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
